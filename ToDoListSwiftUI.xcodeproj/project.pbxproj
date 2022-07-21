@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DE43944A28897F0D0058E97A /* ToDoListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43944928897F0D0058E97A /* ToDoListSwiftUIApp.swift */; };
-		DE43944C28897F0D0058E97A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43944B28897F0D0058E97A /* ContentView.swift */; };
 		DE43944E28897F0F0058E97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE43944D28897F0F0058E97A /* Assets.xcassets */; };
 		DE43945128897F0F0058E97A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE43945028897F0F0058E97A /* Preview Assets.xcassets */; };
+		DE43945A28897F6B0058E97A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43945928897F6B0058E97A /* ListView.swift */; };
+		DE43945C288980470058E97A /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43945B288980470058E97A /* ListRowView.swift */; };
+		DE43945E288981A80058E97A /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43945D288981A80058E97A /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE43944628897F0D0058E97A /* ToDoListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE43944928897F0D0058E97A /* ToDoListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListSwiftUIApp.swift; sourceTree = "<group>"; };
-		DE43944B28897F0D0058E97A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE43944D28897F0F0058E97A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE43945028897F0F0058E97A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE43945928897F6B0058E97A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DE43945B288980470058E97A /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		DE43945D288981A80058E97A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		DE43944828897F0D0058E97A /* ToDoListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DE43945828897F610058E97A /* Model */,
+				DE43945728897F5C0058E97A /* Views */,
 				DE43944928897F0D0058E97A /* ToDoListSwiftUIApp.swift */,
-				DE43944B28897F0D0058E97A /* ContentView.swift */,
 				DE43944D28897F0F0058E97A /* Assets.xcassets */,
 				DE43944F28897F0F0058E97A /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				DE43945028897F0F0058E97A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE43945728897F5C0058E97A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE43945928897F6B0058E97A /* ListView.swift */,
+				DE43945B288980470058E97A /* ListRowView.swift */,
+				DE43945D288981A80058E97A /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE43945828897F610058E97A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE43944C28897F0D0058E97A /* ContentView.swift in Sources */,
+				DE43945E288981A80058E97A /* AddView.swift in Sources */,
 				DE43944A28897F0D0058E97A /* ToDoListSwiftUIApp.swift in Sources */,
+				DE43945A28897F6B0058E97A /* ListView.swift in Sources */,
+				DE43945C288980470058E97A /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
